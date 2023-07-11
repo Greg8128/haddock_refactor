@@ -1,0 +1,11 @@
+package base
+package bytestring
+package containers
+package text
+package transformers
+package mtl
+package directory
+package QuickCheck
+package time
+package filepath
+-- plus more results not shown, pass --count=20 to see more

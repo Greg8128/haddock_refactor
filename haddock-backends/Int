@@ -1,0 +1,11 @@
+Test.DejaFu.SCT.Internal toId :: Coercible Id a => Int -> a
+Unsafe.Coerce unsafeCoerce :: forall (a :: Type) (b :: Type) . a -> b
+Unsafe.Coerce unsafeCoerceUnlifted :: forall (a :: TYPE ('BoxedRep 'Unlifted)) (b :: TYPE ('BoxedRep 'Unlifted)) . a -> b
+Unsafe.Coerce unsafeCoerceAddr :: forall (a :: TYPE 'AddrRep) (b :: TYPE 'AddrRep) . a -> b
+Unsafe.Coerce unsafeCoerce# :: forall (r1 :: RuntimeRep) (r2 :: RuntimeRep) (a :: TYPE r1) (b :: TYPE r2) . a -> b
+GHC.Exts unsafeCoerce# :: forall (r1 :: RuntimeRep) (r2 :: RuntimeRep) (a :: TYPE r1) (b :: TYPE r2) . a -> b
+GHC.Prim unsafeCoerce# :: a -> b
+BasePrelude unsafeCoerce :: a -> b
+Basement.Compat.Primitive unsafeCoerce# :: forall (k0 :: RuntimeRep) (k1 :: RuntimeRep) (a :: TYPE k0) (b :: TYPE k1) . a -> b
+Rebase.Prelude unsafeCoerce :: a -> b
+-- plus more results not shown, pass --count=20 to see more
